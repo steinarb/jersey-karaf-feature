@@ -1,0 +1,40 @@
+* PostgreSQL karaf feature
+
+This is a maven pom that generates an apache karaf feature repository with a feature loading the jersey JAX-RS implementation.
+
+[[https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature][file:https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature/badge.svg]]
+
+** Installing the feature in karaf
+
+Give the following commands from the karaf console:
+#+BEGIN_EXAMPLE
+  feature:repo-add mvn:no.priv.bang.karaf/jersey-karaf-feature/LATEST/xml/features
+  feature:install jersey-karaf-feature
+#+END_EXAMPLE
+
+** Use the feature in a maven project
+
+If you have a maven project building an OSGi bundle with a karaf feature repository attached, using the [[https://svn.apache.org/repos/asf/karaf/site/production/manual/latest/karaf-maven-plugin.html#_using_the_karaf_maven_plugin][karaf-maven-plugin]], then you can add a runtime dependency to this feature by adding the following to the maven dependencies of your project:
+#+BEGIN_SRC xml
+  <dependency>
+      <groupId>no.priv.bang.karaf</groupId>
+      <artifactId>jersey-karaf-feature</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>xml</type>
+      <classifier>features</classifier>
+  </dependency>
+#+END_SRC
+
+** Release history
+
+It might simplify things if I'm able give the feature the same version number as the karaf version the feature pulls in an starts.  But for the moment the version numbers are different.
+
+| Release | PostgreSQL JDBC version | Comment |
+|---------+-------------------------+---------|
+|         |                         |         |
+
+** License
+
+The license of this karaf feature, is Apache Public License v 2.0
+
+See the LICENSE file for details.
