@@ -19,7 +19,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
   <dependency>
       <groupId>no.priv.bang.karaf</groupId>
       <artifactId>jersey-karaf-feature</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
       <type>xml</type>
       <classifier>features</classifier>
   </dependency>
@@ -29,9 +29,9 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
 
 It might simplify things if I'm able give the feature the same version number as the karaf version the feature pulls in an starts.  But for the moment the version numbers are different.
 
-| Release | PostgreSQL JDBC version | Comment |
-|---------+-------------------------+---------|
-|         |                         |         |
+| Release | Jersey version | Comment |
+|---------+----------------+---------|
+|   1.0.0 | 2.27           |         |
 
 ** License
 
