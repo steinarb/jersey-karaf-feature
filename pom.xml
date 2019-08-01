@@ -17,10 +17,11 @@
         <hk2.version>2.5.0-b42</hk2.version>
         <hk2.osgi-resource-locator.version>1.0.1</hk2.osgi-resource-locator.version> <!-- jersey-common 2.27 requires osgi-resource-locator version < 2 -->
         <jackson.version>2.9.9</jackson.version>
+        <jackson.databind.version>2.9.9.2</jackson.databind.version>
         <javax.ws.rs-api.version>2.1</javax.ws.rs-api.version>
         <javax.annotation-api.version>1.2</javax.annotation-api.version>
         <javax.inject.version>1_3</javax.inject.version>
-        <javax.validation>1.1.0.Final</javax.validation>
+        <javax.validation>2.0.1.Final</javax.validation>
         <javassist.version>3.22.0-CR2</javassist.version>
     </properties>
 
