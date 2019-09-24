@@ -21,10 +21,10 @@
     <feature name="jersey-karaf-feature" description="Jersey karaf feature" version="${project.version}">
         <feature>jersey-hk2</feature>
         <feature>pax-http-whiteboard</feature>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.databind.version}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/${jackson.version}</bundle>
+        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version.core}</bundle>
+        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version.databind}</bundle>
+        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version.annotations}</bundle>
+        <bundle start-level="80">mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/${jackson.version.module}</bundle>
         <bundle start-level="80">mvn:org.glassfish.jersey.containers/jersey-container-servlet/${jersey.version}</bundle>
         <bundle start-level="80">mvn:org.glassfish.jersey.containers/jersey-container-servlet-core/${jersey.version}</bundle>
         <bundle start-level="80">mvn:org.glassfish.jersey.core/jersey-server/${jersey.version}</bundle>
