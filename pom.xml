@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xml:space="preserve">
 
-    <parent>
-        <groupId>com.fasterxml.jackson</groupId>
-        <artifactId>jackson-bom</artifactId>
-        <version>2.9.10</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.priv.bang.karaf</groupId>
     <artifactId>jersey-karaf-feature</artifactId>
@@ -19,6 +14,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>2.28</jersey.version>
+        <jackson.version>2.9.10</jackson.version>
+        <jackson.version.core>${jackson.version}</jackson.version.core>
+        <jackson.version.databind>${jackson.version}</jackson.version.databind>
+        <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
+        <jackson.version.module>${jackson.version}</jackson.version.module>
         <hk2.version>2.5.0-b42</hk2.version>
         <hk2.osgi-resource-locator.version>1.0.1</hk2.osgi-resource-locator.version> <!-- jersey-common 2.27 requires osgi-resource-locator version < 2 -->
         <javax.ws.rs-api.version>2.1</javax.ws.rs-api.version>
