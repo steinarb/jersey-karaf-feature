@@ -16,7 +16,7 @@
         <jersey.version>2.28</jersey.version>
         <jackson.version>2.9.10</jackson.version>
         <jackson.version.core>${jackson.version}</jackson.version.core>
-        <jackson.version.databind>${jackson.version}</jackson.version.databind>
+        <jackson.version.databind>${jackson.version}.1</jackson.version.databind>
         <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
         <hk2.version>2.5.0-b42</hk2.version>
