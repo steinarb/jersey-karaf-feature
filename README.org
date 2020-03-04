@@ -19,7 +19,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
   <dependency>
       <groupId>no.priv.bang.karaf</groupId>
       <artifactId>jersey-karaf-feature</artifactId>
-      <version>1.5.0</version>
+      <version>1.6.0</version>
       <type>xml</type>
       <classifier>features</classifier>
   </dependency>
@@ -31,6 +31,7 @@ It might simplify things if I'm able give the feature the same version number as
 
 | Date                   | Release | Jersey version | Comment                                                                                            |
 |------------------------+---------+----------------+----------------------------------------------------------------------------------------------------|
+| <2020-03-04 Wed 23:49> |   1.6.0 |           2.30 | Use jackson-databind 2.9.10.3                                                                                                   |
 | <2020-02-07 Fri 21:55> |   1.5.0 |           2.30 | Use jersey 2.30 and jackson-databind 2.9.10.2 (/Note/! [[https://github.com/eclipse-ee4j/jersey/issues/4156][jersey 2.28 doesn't work on OSGi with JDK8]]) |
 | <2019-11-05 Tue 22:22> |   1.4.0 |           2.28 | Use jackson-databind 2.9.10.1                                                                      |
 | <2019-06-08 Sat 22:22> |   1.3.0 |           2.28 | Use jackson 2.9.10                                                                                 |
