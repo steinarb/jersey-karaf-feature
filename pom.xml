@@ -14,9 +14,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>2.30.1</jersey.version>
-        <jackson.version>2.9.10</jackson.version>
+        <jackson.version>2.10.3</jackson.version>
         <jackson.version.core>${jackson.version}</jackson.version.core>
-        <jackson.version.databind>${jackson.version}.3</jackson.version.databind>
+        <jackson.version.databind>${jackson.version}</jackson.version.databind>
         <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
         <hk2.version>2.6.0</hk2.version>
