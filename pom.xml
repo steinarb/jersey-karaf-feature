@@ -19,7 +19,7 @@
         <jackson.version.databind>${jackson.version}</jackson.version.databind>
         <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
-        <hk2.version>2.6.0</hk2.version>
+        <hk2.version>2.6.1</hk2.version>
         <hk2.osgi-resource-locator.version>1.0.3</hk2.osgi-resource-locator.version> <!-- jersey-common 2.27 requires osgi-resource-locator version < 2 -->
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <xml.bind-api.version>2.3.2</xml.bind-api.version>
