@@ -36,6 +36,5 @@
         <bundle start-level="80">mvn:com.sun.activation/jakarta.activation/${activation-api.version}</bundle>
         <bundle start-level="80">mvn:jakarta.activation/jakarta.activation-api/${activation-api.version}</bundle>
         <bundle start-level="80">mvn:jakarta.validation/jakarta.validation-api/${javax.validation}</bundle>
-        <bundle start-level="80">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.javax-inject/${javax.inject.version}</bundle>
     </feature>
 </features>
