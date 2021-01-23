@@ -19,7 +19,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
   <dependency>
       <groupId>no.priv.bang.karaf</groupId>
       <artifactId>jersey</artifactId>
-      <version>1.7.1</version>
+      <version>1.8.0</version>
       <type>xml</type>
       <classifier>features</classifier>
   </dependency>
@@ -31,6 +31,7 @@ It might simplify things if I'm able give the feature the same version number as
 
 | Date                   | Release | Jersey version | Comment                                                                                            |
 |------------------------+---------+----------------+----------------------------------------------------------------------------------------------------|
+| <2021-01-23 Sat 13:28> |   1.8.0 |         2.30.1 | Changed the maven coordinates of the feature to allow for integration test                         |
 | <2020-09-11 Fri 19:35> |   1.7.1 |         2.30.1 | Don't load servicemix javax.inject at runtime (might conflict with the HK2 javax.inject bundle)    |
 | <2020-04-09 Thu 20:29> |   1.7.0 |         2.30.1 | Use jackson 2.10.3 and HK2 2.6.1                                                                   |
 | <2020-03-04 Wed 23:49> |   1.6.0 |           2.30 | Use jackson-databind 2.9.10.3                                                                      |
