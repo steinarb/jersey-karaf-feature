@@ -8,7 +8,7 @@ This is a maven pom that generates an apache karaf feature repository with a fea
 
 Give the following commands from the karaf console:
 #+BEGIN_EXAMPLE
-  feature:repo-add mvn:no.priv.bang.karaf/jersey-karaf-feature/LATEST/xml/features
+  feature:repo-add mvn:no.priv.bang.karaf/jersey/LATEST/xml/features
   feature:install jersey-karaf-feature
 #+END_EXAMPLE
 
@@ -18,7 +18,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
 #+BEGIN_SRC xml
   <dependency>
       <groupId>no.priv.bang.karaf</groupId>
-      <artifactId>jersey-karaf-feature</artifactId>
+      <artifactId>jersey</artifactId>
       <version>1.7.1</version>
       <type>xml</type>
       <classifier>features</classifier>
