@@ -2,7 +2,7 @@
 
 This is a maven pom that generates an apache karaf feature repository with a feature loading the jersey JAX-RS implementation.
 
-[[https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature][file:https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature/badge.svg]]
+[[https://travis-ci.org/steinarb/jersey-karaf-feature][file:https://travis-ci.org/steinarb/jersey-karaf-feature.svg?branch=master]] [[https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature][file:https://maven-badges.herokuapp.com/maven-central/no.priv.bang.karaf/jersey-karaf-feature/badge.svg]]
 
 ** Installing the feature in karaf
 
