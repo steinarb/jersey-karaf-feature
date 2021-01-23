@@ -13,6 +13,7 @@
 
     <modules>
         <module>jersey</module>
+        <module>jersey.tests</module>
     </modules>
 
     <properties>
@@ -31,6 +32,9 @@
         <activation-api.version>1.2.1</activation-api.version>
         <javax.validation>2.0.2</javax.validation>
         <javassist.version>3.25.0-GA</javassist.version>
+        <junit.version>4.13.1</junit.version> <!-- pax exam can't use junit 5 yet -->
+        <paxexam.version>4.13.4</paxexam.version>
+        <karaf.version>4.2.10</karaf.version>
     </properties>
 
     <build>
@@ -55,6 +59,19 @@
                 </configuration>
             </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <distributionManagement>
