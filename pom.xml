@@ -13,6 +13,7 @@
 
     <modules>
         <module>jersey</module>
+        <module>jersey-feature-bom</module>
         <module>jersey.tests</module>
     </modules>
 
