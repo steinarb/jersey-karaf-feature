@@ -21,6 +21,13 @@
             <classifier>features</classifier>
         </dependency>
         <dependency>
+            <groupId>no.priv.bang.karaf</groupId>
+            <artifactId>jackson-java-time-module</artifactId>
+            <version>${project.version}</version>
+            <type>xml</type>
+            <classifier>features</classifier>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>

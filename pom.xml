@@ -16,6 +16,7 @@
         <module>jersey-hk2</module>
         <module>jersey</module>
         <module>jersey-feature-bom</module>
+        <module>jackson-java-time-module</module>
         <module>jersey.tests</module>
     </modules>
 
@@ -27,6 +28,7 @@
         <jackson.version.databind>${jackson.version}</jackson.version.databind>
         <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
+        <jackson.version.jsr310>${jackson.version}</jackson.version.jsr310>
         <hk2.version>2.6.1</hk2.version>
         <hk2.osgi-resource-locator.version>1.0.3</hk2.osgi-resource-locator.version> <!-- jersey-common 2.27 requires osgi-resource-locator version < 2 -->
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>

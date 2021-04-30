@@ -21,9 +21,21 @@ public class JerseyFeatureIntegrationTest extends KarafTestSupport {
 
     @Configuration
     public Option[] config() {
-        final MavenArtifactUrlReference handleregFeatureRepo = maven().groupId("no.priv.bang.karaf").artifactId("jersey").version("LATEST").type("xml").classifier("features");
+        final MavenArtifactUrlReference handleregFeatureRepo = maven()
+            .groupId("no.priv.bang.karaf")
+            .artifactId("jersey")
+            .version("LATEST")
+            .type("xml")
+            .classifier("features");
+        final MavenArtifactUrlReference javaTimeJacksonModuleRepo = maven()
+            .groupId("no.priv.bang.karaf")
+            .artifactId("jackson-java-time-module")
+            .version("LATEST")
+            .type("xml")
+            .classifier("features");
         Option[] options = new Option[] {
-            features(handleregFeatureRepo)
+            features(handleregFeatureRepo),
+            features(javaTimeJacksonModuleRepo)
         };
         return Stream.of(super.config(), options).flatMap(Stream::of).toArray(Option[]::new);
     }
@@ -31,6 +43,11 @@ public class JerseyFeatureIntegrationTest extends KarafTestSupport {
     @Test
     public void testLoadFeature() throws Exception { // NOSONAR this test has an assert, just not an assert sonar recognizes
         installAndAssertFeature("jersey-karaf-feature");
+    }
+
+    @Test
+    public void testLoadJacksonJavaTimeFeature() throws Exception { // NOSONAR this test has an assert, just not an assert sonar recognizes
+        installAndAssertFeature("jackson-java-time-module");
     }
 
 }
