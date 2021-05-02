@@ -1,40 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="jersey.karaf.feature">
-    <feature name="hk2-karaf-feature" description="HK2 karaf feature" version="${project.version}">
-        <bundle start-level="80">mvn:jakarta.annotation/jakarta.annotation-api/${javax.annotation-api.version}</bundle>
-        <bundle start-level="80">mvn:javax.ws.rs/javax.ws.rs-api/${javax.ws.rs-api.version}</bundle>
-        <bundle start-level="80">mvn:org.javassist/javassist/${javassist.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2.external/jakarta.inject/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/osgi-resource-locator/${hk2.osgi-resource-locator.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-locator/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2.external/aopalliance-repackaged/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-api/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-utils/${hk2.version}</bundle>
-    </feature>
-
-    <feature name="jersey-hk2">
-        <feature>hk2-karaf-feature</feature>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="jersey.hk2.karaf.feature">
+    <repository>mvn:no.priv.bang.karaf/hk2-karaf-feature/${project.version}/xml/features</repository>
+    <feature name="jersey-hk2" version="${project.version}">
+        <feature version="${project.version}" prerequisite="true">hk2-karaf-feature</feature>
         <bundle start-level="80">mvn:org.glassfish.jersey.core/jersey-common/${jersey.version}</bundle>
         <bundle start-level="80">mvn:org.glassfish.jersey.inject/jersey-hk2/${jersey.version}</bundle>
-    </feature>
-
-    <feature name="jersey-karaf-feature" description="Jersey karaf feature" version="${project.version}">
-        <feature>jersey-hk2</feature>
-        <feature>pax-http-whiteboard</feature>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version.core}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version.databind}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version.annotations}</bundle>
-        <bundle start-level="80">mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/${jackson.version.module}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.containers/jersey-container-servlet/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.containers/jersey-container-servlet-core/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.core/jersey-server/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.core/jersey-client/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.media/jersey-media-jaxb/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.media/jersey-media-json-jackson/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.ext/jersey-entity-filtering/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:jakarta.xml.bind/jakarta.xml.bind-api/${xml.bind-api.version}</bundle>
-        <bundle start-level="80">mvn:com.sun.activation/jakarta.activation/${activation-api.version}</bundle>
-        <bundle start-level="80">mvn:jakarta.activation/jakarta.activation-api/${activation-api.version}</bundle>
-        <bundle start-level="80">mvn:jakarta.validation/jakarta.validation-api/${javax.validation}</bundle>
     </feature>
 </features>

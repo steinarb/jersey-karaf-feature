@@ -17,6 +17,16 @@
     <properties>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>no.priv.bang.karaf</groupId>
+            <artifactId>jersey-hk2</artifactId>
+            <version>${project.version}</version>
+            <type>xml</type>
+            <classifier>features</classifier>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

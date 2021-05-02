@@ -12,6 +12,8 @@
     <description>Parent pom for apache karaf feature repository containing a feature that will load the Jersey JAX-RS implementation</description>
 
     <modules>
+        <module>hk2-karaf-feature</module>
+        <module>jersey-hk2</module>
         <module>jersey</module>
         <module>jersey-feature-bom</module>
         <module>jersey.tests</module>
@@ -70,6 +72,51 @@
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.1.0</version>
+                    <executions>
+                        <execution>
+                            <id>filter-resources</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>resources</goal>
+                            </goals>
+                            <configuration>
+                                <resources>
+                                    <resource>
+                                        <directory>src/main/filtered-resources</directory>
+                                        <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <inherited>false</inherited>
+                    <executions>
+                        <execution>
+                            <id>attach-karaf-feature</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>attach-artifact</goal>
+                            </goals>
+                            <configuration>
+                                <artifacts>
+                                    <artifact>
+                                        <file>target/classes/feature.xml</file>
+                                        <type>xml</type>
+                                        <classifier>features</classifier>
+                                    </artifact>
+                                </artifacts>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>

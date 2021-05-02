@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="jersey.karaf.feature">
-    <feature name="hk2-karaf-feature" description="HK2 karaf feature" version="${project.version}">
-        <bundle start-level="80">mvn:jakarta.annotation/jakarta.annotation-api/${javax.annotation-api.version}</bundle>
-        <bundle start-level="80">mvn:javax.ws.rs/javax.ws.rs-api/${javax.ws.rs-api.version}</bundle>
-        <bundle start-level="80">mvn:org.javassist/javassist/${javassist.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2.external/jakarta.inject/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/osgi-resource-locator/${hk2.osgi-resource-locator.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-locator/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2.external/aopalliance-repackaged/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-api/${hk2.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.hk2/hk2-utils/${hk2.version}</bundle>
-    </feature>
-
-    <feature name="jersey-hk2">
-        <feature>hk2-karaf-feature</feature>
-        <bundle start-level="80">mvn:org.glassfish.jersey.core/jersey-common/${jersey.version}</bundle>
-        <bundle start-level="80">mvn:org.glassfish.jersey.inject/jersey-hk2/${jersey.version}</bundle>
-    </feature>
-
+    <repository>mvn:no.priv.bang.karaf/jersey-hk2/${project.version}/xml/features</repository>
     <feature name="jersey-karaf-feature" description="Jersey karaf feature" version="${project.version}">
-        <feature>jersey-hk2</feature>
+        <feature version="${project.version}" prerequisite="true">jersey-hk2</feature>
         <feature>pax-http-whiteboard</feature>
         <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version.core}</bundle>
         <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version.databind}</bundle>
