@@ -37,9 +37,7 @@
         <activation-api.version>1.2.1</activation-api.version>
         <javax.validation>2.0.2</javax.validation>
         <javassist.version>3.25.0-GA</javassist.version>
-        <junit.version>4.13.1</junit.version> <!-- pax exam can't use junit 5 yet -->
-        <paxexam.version>4.13.4</paxexam.version>
-        <karaf.version>4.2.10</karaf.version>
+        <karaf.version>4.2.11</karaf.version>
     </properties>
 
     <build>
