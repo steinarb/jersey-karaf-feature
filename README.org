@@ -15,15 +15,35 @@ Give the following commands from the karaf console:
 ** Use the feature in a maven project
 
 If you have a maven project building an OSGi bundle with a karaf feature repository attached, using the [[https://svn.apache.org/repos/asf/karaf/site/production/manual/latest/karaf-maven-plugin.html#_using_the_karaf_maven_plugin][karaf-maven-plugin]], then you can add a runtime dependency to this feature by adding the following to the maven dependencies of your project:
-#+BEGIN_SRC xml
-  <dependency>
-      <groupId>no.priv.bang.karaf</groupId>
-      <artifactId>jersey</artifactId>
-      <version>1.8.4</version>
-      <type>xml</type>
-      <classifier>features</classifier>
-  </dependency>
-#+END_SRC
+ 1. Import the BoM (Bill of Materials) in your project's dependencyManagement
+    #+BEGIN_SRC xml
+      <build>
+       <dependencyManagement>
+        <dependencies>
+         <dependency>
+          <groupId>no.priv.bang.karaf</groupId>
+          <artifactId>jersey</artifactId>
+          <version>1.8.4</version>
+          <type>pom</type>
+          <scope>import</scope>
+         </dependency>
+        </dependencies>
+       </dependencyManagement>
+      </build>
+    #+END_SRC
+ 2. Add a dependency to the karaf feature repository of the feature (/note/: no version, because that is supplied by the BoM import)
+    #+BEGIN_SRC xml
+      <build>
+       <dependencies>
+        <dependency>
+         <groupId>no.priv.bang.karaf</groupId>
+         <artifactId>jersey</artifactId>
+         <type>xml</type>
+         <classifier>features</classifier>
+        </dependency>
+       </dependencies>
+      </build>
+    #+END_SRC
 
 ** Release history
 
