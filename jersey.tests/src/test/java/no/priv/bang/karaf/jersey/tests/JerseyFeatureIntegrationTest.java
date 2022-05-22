@@ -21,7 +21,7 @@ public class JerseyFeatureIntegrationTest extends KarafTestSupport {
 
     @Configuration
     public Option[] config() {
-        final MavenArtifactUrlReference handleregFeatureRepo = maven()
+        final MavenArtifactUrlReference jerseyFeatureRepo = maven()
             .groupId("no.priv.bang.karaf")
             .artifactId("jersey")
             .version("LATEST")
@@ -34,7 +34,7 @@ public class JerseyFeatureIntegrationTest extends KarafTestSupport {
             .type("xml")
             .classifier("features");
         Option[] options = new Option[] {
-            features(handleregFeatureRepo),
+            features(jerseyFeatureRepo),
             features(javaTimeJacksonModuleRepo)
         };
         return Stream.of(super.config(), options).flatMap(Stream::of).toArray(Option[]::new);

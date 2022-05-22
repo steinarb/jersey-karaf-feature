@@ -3,7 +3,7 @@
     <repository>mvn:no.priv.bang.karaf/jersey-hk2/${project.version}/xml/features</repository>
     <feature name="jersey-karaf-feature" description="Jersey karaf feature" version="${project.version}">
         <feature version="${project.version}" prerequisite="true">jersey-hk2</feature>
-        <feature>pax-http-whiteboard</feature>
+        <feature>http</feature>
         <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version.core}</bundle>
         <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version.databind}</bundle>
         <bundle start-level="80">mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version.annotations}</bundle>
