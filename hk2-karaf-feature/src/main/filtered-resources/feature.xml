@@ -2,7 +2,7 @@
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="hk2.karaf.feature">
     <feature name="hk2-karaf-feature" description="HK2 karaf feature" version="${project.version}">
         <bundle start-level="80">mvn:jakarta.annotation/jakarta.annotation-api/${javax.annotation-api.version}</bundle>
-        <bundle start-level="80">mvn:javax.ws.rs/javax.ws.rs-api/${javax.ws.rs-api.version}</bundle>
+        <bundle start-level="80">mvn:jakarta.ws.rs/jakarta.ws.rs-api/${jakarta.ws.rs-api.version}</bundle>
         <bundle start-level="80">mvn:org.javassist/javassist/${javassist.version}</bundle>
         <bundle start-level="80">mvn:org.glassfish.hk2.external/jakarta.inject/${hk2.version}</bundle>
         <bundle start-level="80">mvn:org.glassfish.hk2/osgi-resource-locator/${hk2.osgi-resource-locator.version}</bundle>
