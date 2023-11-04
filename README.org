@@ -24,7 +24,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
          <dependency>
           <groupId>no.priv.bang.karaf</groupId>
           <artifactId>jersey</artifactId>
-          <version>1.9.6</version>
+          <version>1.9.7</version>
           <type>pom</type>
           <scope>import</scope>
          </dependency>
@@ -52,6 +52,7 @@ It might simplify things if I'm able give the feature the same version number as
 
 | Date                   | Release | Jersey version | Comment                                                                                            |
 |------------------------+---------+----------------+----------------------------------------------------------------------------------------------------|
+| <2023-11-04 Sat 22:58> |   1.9.7 |           2.41 | Use jersey 2.41 and jackson 2.15.1, replace javax.ws.rs-api 2.1.1 with jakarta.ws.rs-api 2.1.6     |
 | <2023-07-30 Sun 12:49> |   1.9.6 |           2.40 | Use jersey 2.40 and jackson 2.15.2                                                                 |
 | <2023-04-25 Tue 22:52> |   1.9.5 |         2.39.1 | Use jackson 2.15.0 to really fix CWE-400                                                           |
 | <2023-04-24 Mon 18:20> |   1.9.4 |         2.39.1 | Use jersey 2.39.1. Also use jackson 2.14.2 to fix CWE-400                                          |
