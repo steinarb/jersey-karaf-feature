@@ -48,7 +48,9 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
 
 ** Release history
 
-It might simplify things if I'm able give the feature the same version number as the karaf version the feature pulls in and starts.  But for the moment the version numbers are different.
+It might simplify things if I'm able give the feature the same version number as the jersey version the feature pulls in and starts.  But for the moment the version numbers are different.
+
+Also I have to bump HK2 (maybe) and jackson (for sure) at the same time when making a new release of this karaf feature and the versions of HK2 and jackson don't match the jersey version.
 
 | Date                   | Release | Jersey version | Comment                                                                                            |
 |------------------------+---------+----------------+----------------------------------------------------------------------------------------------------|
