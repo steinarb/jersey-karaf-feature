@@ -37,7 +37,7 @@
         <activation-api.version>1.2.1</activation-api.version>
         <javax.validation>2.0.2</javax.validation>
         <javassist.version>3.25.0-GA</javassist.version>
-        <karaf.version>4.4.6</karaf.version>
+        <karaf.version>4.4.7</karaf.version>
     </properties>
 
     <build>
