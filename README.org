@@ -24,7 +24,7 @@ If you have a maven project building an OSGi bundle with a karaf feature reposit
          <dependency>
           <groupId>no.priv.bang.karaf</groupId>
           <artifactId>jersey</artifactId>
-          <version>1.9.10</version>
+          <version>1.9.11</version>
           <type>pom</type>
           <scope>import</scope>
          </dependency>
@@ -54,7 +54,8 @@ Also I have to bump HK2 (maybe) and jackson (for sure) at the same time when mak
 
 | Date                   | Release | Jersey version | Comment                                                                                            |
 |------------------------+---------+----------------+----------------------------------------------------------------------------------------------------|
-| <2025-05-04 Sun 21:53> |  1.9.10 |           2.46 | Use jersey 2.46 and jackson 2.19.0                                                                |
+| <2025-06-18 Wed 19:18> |  1.9.11 |           2.47 | Use jersey 2.47 and jackson 2.19.1, first central portal publish                                   |
+| <2025-05-04 Sun 21:53> |  1.9.10 |           2.46 | Use jersey 2.46 and jackson 2.19.0                                                                 |
 | <2024-08-02 Fri 16:46> |   1.9.9 |           2.44 | Use jersey 2.44 and jackson 2.17.2                                                                 |
 | <2024-03-25 Mon 10:41> |   1.9.8 |           2.42 | Use jersey 2.42 and jackson 2.16.2                                                                 |
 | <2023-11-04 Sat 22:58> |   1.9.7 |           2.41 | Use jersey 2.41 and jackson 2.15.1, replace javax.ws.rs-api 2.1.1 with jakarta.ws.rs-api 2.1.6     |
