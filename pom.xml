@@ -17,6 +17,7 @@
         <module>jersey</module>
         <module>jersey-feature-bom</module>
         <module>jackson-java-time-module</module>
+        <module>jersey-karaf-features-dummy-dependencies</module>
         <module>jersey.tests</module>
     </modules>
 
