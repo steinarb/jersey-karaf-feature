@@ -25,7 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>2.47</jersey.version>
         <jackson.version>2.19.2</jackson.version>
-        <jackson.version.core>${jackson.version}</jackson.version.core>
+        <jackson.version.core>2.22.0</jackson.version.core>
         <jackson.version.databind>${jackson.version}</jackson.version.databind>
         <jackson.version.annotations>${jackson.version}</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
