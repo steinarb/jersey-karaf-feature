@@ -26,7 +26,7 @@
         <jersey.version>2.47</jersey.version>
         <jackson.version>2.19.2</jackson.version>
         <jackson.version.core>2.22.0</jackson.version.core>
-        <jackson.version.databind>${jackson.version}</jackson.version.databind>
+        <jackson.version.databind>2.22.0</jackson.version.databind>
         <jackson.version.annotations>2.22</jackson.version.annotations>
         <jackson.version.module>${jackson.version}</jackson.version.module>
         <jackson.version.jsr310>${jackson.version}</jackson.version.jsr310>
