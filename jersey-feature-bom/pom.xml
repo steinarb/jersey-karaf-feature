@@ -19,7 +19,7 @@ under the License.
     <parent>
         <groupId>no.priv.bang.karaf</groupId>
         <artifactId>jersey-karaf-feature</artifactId>
-        <version>1.9.12-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <artifactId>jersey-feature-bom</artifactId>
     <packaging>pom</packaging>
@@ -59,28 +59,28 @@ under the License.
             <dependency>
                 <groupId>no.priv.bang.karaf</groupId>
                 <artifactId>hk2-karaf-feature</artifactId>
-                <version>1.9.12-SNAPSHOT</version>
+                <version>${revision}</version>
                 <type>xml</type>
                 <classifier>features</classifier>
             </dependency>
             <dependency>
                 <groupId>no.priv.bang.karaf</groupId>
                 <artifactId>jersey-hk2</artifactId>
-                <version>1.9.12-SNAPSHOT</version>
+                <version>${revision}</version>
                 <type>xml</type>
                 <classifier>features</classifier>
             </dependency>
             <dependency>
                 <groupId>no.priv.bang.karaf</groupId>
                 <artifactId>jersey</artifactId>
-                <version>1.9.12-SNAPSHOT</version>
+                <version>${revision}</version>
                 <type>xml</type>
                 <classifier>features</classifier>
             </dependency>
             <dependency>
                 <groupId>no.priv.bang.karaf</groupId>
                 <artifactId>jackson-java-time-module</artifactId>
-                <version>1.9.12-SNAPSHOT</version>
+                <version>${revision}</version>
                 <type>xml</type>
                 <classifier>features</classifier>
             </dependency>

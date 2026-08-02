@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.priv.bang.karaf</groupId>
     <artifactId>jersey-karaf-feature</artifactId>
-    <version>1.9.12-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <packaging>pom</packaging>
 
@@ -22,6 +22,7 @@
     </modules>
 
     <properties>
+        <revision>999-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jersey.version>2.47</jersey.version>
         <jackson.version>2.22.0</jackson.version>
