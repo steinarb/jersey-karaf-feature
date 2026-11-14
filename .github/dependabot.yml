@@ -7,7 +7,9 @@ updates:
   ignore:
     # ignore Maven APIs/SPIs
     - dependency-name: org.apache.maven:*
-- package-ecosystem: "github-actions"
+    # Have to stay on javax.servlet for as long as apache karaf does the same
+    - dependency-name: org.glassfish.jersey*
+      versions: [">= 3.0.0"]- package-ecosystem: "github-actions"
   directory: "/"
   schedule:
     interval: weekly
